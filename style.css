@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,600;0,800;1,400&display=swap');
+
 html{
     scroll-behavior: smooth;
 }
@@ -7,6 +9,13 @@ html{
     margin: 0;
     padding: 0;
 }
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(161, 160, 160);
+    color: #ffffff;
+}
+
 ::before,::after{
     box-sizing: border-box;
 }
@@ -31,6 +40,10 @@ html{
     height: var(--cardheight);
     border-radius: 14px;
     box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
   }
 
 .card-div{
@@ -43,13 +56,26 @@ html{
 }
 
 .our{
-    width: 40%;
+    width: 40dvw;
     height: 40%;
     margin-bottom: 5%;
+}
+
+.card h2{
+    font-size: 4vw;    
+}
+
+.card h1{
+    font-size: 7vw;    
 }
 
 @media (min-width:600px){
     .our{
         margin: 20px;
+    }
+}
+@media (min-width:600px){
+    .card h1{
+        font-size: 4vw;    
     }
 }
