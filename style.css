@@ -19,117 +19,37 @@ html{
     --section-p: 80px;
 }
 .container{
-    max-width: 1170px;
+    max-width: 100dvw;
     margin: auto;
     padding: 0 15px;
 }
 /* card area */
 
-.card-mng{
-    padding: var(--section-p);
-}
 .card {
     position: relative;
     width: var(--cardwidth);
     height: var(--cardheight);
     border-radius: 14px;
-    z-index: 1111;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
     box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
   }
-  
-  .bg {
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    width: var(--bgwidth);
-    height: var(--bgheight);
-    z-index: 2;
-    background: rgba(255, 255, 255, .95);
-    backdrop-filter: blur(24px);
-    border-radius: 10px;
-    overflow: hidden;
-    outline: 2px solid white;
-  }
-  
-  .blob {
-    position: absolute;
-    z-index: 1;
-    top: 50%;
-    left: 50%;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-color: #ff0000;
-    opacity: 1;
-    filter: blur(12px);
-    animation: blob-bounce 5s infinite ease;
-  }
-  
-  @keyframes blob-bounce {
-    0% {
-      transform: translate(-100%, -100%) translate3d(0, 0, 0);
-    }
-  
-    25% {
-      transform: translate(-100%, -100%) translate3d(100%, 0, 0);
-    }
-  
-    50% {
-      transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
-    }
-  
-    75% {
-      transform: translate(-100%, -100%) translate3d(0, 100%, 0);
-    }
-  
-    100% {
-      transform: translate(-100%, -100%) translate3d(0, 0, 0);
-    }
-  }
+
 .card-div{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+    display: flex;
+    flex-flow: column wrap;
+    height: 25rem;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 30px;
 }
 
 .our{
-    padding: 40px 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 40%;
+    height: 40%;
+    margin-bottom: 5%;
 }
 
-@media (max-width: 1500px){
-    .card-div{
-        grid-template-columns: repeat(3, 1fr);
+@media (min-width:600px){
+    .our{
+        margin: 20px;
     }
 }
-@media (max-width: 1050px){
-    .card-div{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .card-mng{
-        padding: 2vw;
-    }
-}
-@media (max-width: 650px){
-    .card-div{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .card{
-        width: 160px;
-        height: 135px;
-    }
-    .card-mng{
-        padding: 0;
-    }
-}
-
-
-  
