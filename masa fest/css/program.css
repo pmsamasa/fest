@@ -180,3 +180,7 @@ table             {
       &.r           { text-align:center }
     }
 }
+
+#general, #aliya{
+  display: none;
+}
