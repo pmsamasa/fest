@@ -34,13 +34,25 @@ body{
 }
 
 /* section styling start*/
-section {
+section , .top{
     display: flex;
     justify-content: center;
     flex-flow: column;
 }
 /* section styling end*/
 
+.cent {
+  display: flex;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.title h1{
+  display: flex;
+  align-self: center;
+  margin: 3rem;
+  font-size: 6dvw;
+}
 /* card area */
 .card {
     box-sizing: border-box;
@@ -71,17 +83,6 @@ section {
   .card:active {
     transform: scale(0.95) rotateZ(1.7deg);
   }
-/* .card {
-    position: relative;
-    width: var(--cardwidth);
-    height: var(--cardheight);
-    border-radius: 14px;
-    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column;
-  } */
 
 .card-div{
     display: flex;
@@ -121,12 +122,18 @@ section {
     .container {
         padding: 0;
     }
+    .title h1{
+      margin: 1rem;
+      font-size: 8dvw;
+    }
 }
 @media (min-width:600px){
     .card h1{
         font-size: 4vw;    
     }
 }
+
+
 
 /* button section start */
 .button {
@@ -183,6 +190,13 @@ section {
     justify-content: center;
     flex-direction: column;
   }
+
+  .active-b{
+    color: #ffffff;
+    background-color: #536DFE;
+    border-color: #EEF2FF;
+    box-shadow: rgba(83, 109, 254, 0.2) 0 2px 4px, rgba(83, 109, 254, 0.15) 0 7px 13px -3px, #5353e7 0 -3px 0 inset;
+  }
 /* button section ends */
 
 /* table section start */
@@ -191,7 +205,7 @@ table, td, th {
   }
   
 table {
-    width: 80dvw;
+    width: 90dvw;
     border-collapse: collapse;
     margin-left: auto;
     margin-right: auto;
@@ -209,7 +223,7 @@ table             {
     background:white;
     border-radius:6px;
     overflow:hidden;
-    max-width:800px; 
+    max-width:1100px;
     width:100%;
     margin:0 auto;
     position:relative;
@@ -233,6 +247,12 @@ table             {
       &.c           { text-align:center }
       &.r           { text-align:center }
     }
+}
+#aliya{
+  display: none;
+}
+#general{
+  display: none;
 }
 
 
