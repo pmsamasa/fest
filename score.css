@@ -197,7 +197,17 @@ section , .top{
     border-color: #EEF2FF;
     box-shadow: rgba(83, 109, 254, 0.2) 0 2px 4px, rgba(83, 109, 254, 0.15) 0 7px 13px -3px, #5353e7 0 -3px 0 inset;
   }
+
+
 /* button section ends */
+
+#al-stage {
+  display: none;
+}
+
+#gn-stage {
+  display: none;
+}
 
 /* table section start */
 table, td, th {
@@ -252,6 +262,16 @@ table             {
   display: none;
 }
 #general{
+  display: none;
+}
+
+#tb-th-off{
+  display: none;
+}
+#tb-al-on, #tb-al-off {
+  display: none;
+}
+#tb-gn-on, #tb-gn-off{
   display: none;
 }
 

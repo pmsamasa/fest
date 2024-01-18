@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>team</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="score.css">
 </head>
 
 <body>
@@ -38,17 +38,25 @@
     <section>
         <div class="buttons-div">
             <div class="category">
-                <button class="button">TH</button>
-                <button class="button">AL</button>
-                <button class="button">GN</button>
+                <button id="th-score-btn" class="button active-b" onclick="thScoreBtn()">TH</button>
+                <button id="al-score-btn" class="button" onclick="alScoreBtn()">AL</button>
+                <button id="gn-score-btn" class="button" onclick="gnScoreBtn()">GN</button>
             </div>
-            <div class="stage">
-                <button class="button">ONSTAGE</button>
-                <button class="button">OFFSTAGE</button>
+            <div id="th-stage" class="stage">
+                <button id="btn-th-on" class="button active-b" onclick="thOnBtn()">ONSTAGE</button>
+                <button id="btn-th-off" class="button" onclick="thOffBtn()">OFFSTAGE</button>
+            </div>
+            <div id="al-stage" class="stage">
+                <button id="btn-al-on" class="button active-b" onclick="alOnBtn()">ONSTAGE</button>
+                <button id="btn-al-off" class="button" onclick="alOffBtn()">OFFSTAGE</button>
+            </div>
+            <div id="gn-stage" class="stage">
+                <button id="btn-gn-on" class="button active-b" onclick="gnOnBtn()">ONSTAGE</button>
+                <button id="btn-gn-off" class="button" onclick="gnOffBtn()">OFFSTAGE</button>
             </div>
         </div>
         <div class="tables-div">
-            <div class="table-div">
+            <div id="tb-th-on" class="table-div">
                 <table><!--thamheediyya On stage -->
                     <thead>
                         <tr>
@@ -182,7 +190,7 @@
                     </tbody>
                 </table>
             </div>
-            <div class="table-div">
+            <div id="tb-th-off" class="table-div">
                 <table><!--thamheediyya Off stage -->
                     <thead>
                         <tr>
@@ -309,7 +317,7 @@
                     </tbody>
                 </table>
             </div>
-            <div class="table-div">
+            <div id="tb-al-off" class="table-div">
                 <table><!--Aliya Off stage -->
                     <thead>
                         <tr>
@@ -506,8 +514,8 @@
                     </tbody>
                 </table>
             </div>
-            <div class="table-div">
-                <table><!--thamheediyya Off stage -->
+            <div id="tb-al-on" class="table-div">
+                <table><!--aliya On stage -->
                     <thead>
                         <tr>
                             <th>Programme</th>
@@ -647,7 +655,7 @@
                     </tbody>
                 </table>
             </div>
-            <div class="table-div"><!-- General on stage -->
+            <div id="tb-gn-on" class="table-div"><!-- General on stage -->
                 <table>
                     <thead>
                         <tr>
@@ -690,7 +698,7 @@
                     </tbody>
                 </table>
             </div>
-            <div class="table-div"><!-- General off stage -->
+            <div id="tb-gn-off" class="table-div"><!-- General off stage -->
                 <table>
                     <thead>
                         <tr>
@@ -750,5 +758,8 @@
         </div>
     </section>
     <!-- score bord end -->
+
+    <script src="script.js"></script>
+</body>
 
 </html>
