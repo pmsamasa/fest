@@ -220,13 +220,10 @@ img {
     border-top-right-radius: 15px 225px;
     border: 2px solid var(--text-color);
     box-shadow: var(--text-color) -5px 15px 25px -15px;
-}
-
-.names {
     color: var(--text-color);
     font-size: var(--font-size-mem);
-    
 }
+
 
 .aal:hover {
     box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
