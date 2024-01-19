@@ -87,6 +87,90 @@ function showstage(schedule) {
             }
 }
 
+/*schedule timings */
+
+let SHEET_ID = '1NTtWnFGtyC9K2qA6GnvgEk1wkIOpe4myKEJDRuNX1ZM';
+let SHEET_TITLE = 'time';
+let SHEET_RANGE = 'A2:C12';
+FULL_URL = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + SHEET_TITLE + '&range=' + SHEET_RANGE );
+
+fetch(FULL_URL)
+.then(res => res.text())
+.then(rep => {
+    let data = JSON.parse(rep.substr(47).slice(0, -2));
+    let length = data.table.rows.length;//total number of values
+
+    var table = document.getElementById('day-1');// table selector
+
+    for (let i = 0; i < length; i++ ) {
+         
+        var newRow = table.insertRow();// insert rows
+
+        var cell1 = newRow.insertCell(0);//inserting colums/cells to above row
+        var cell2 = newRow.insertCell(1);
+        var cell3 = newRow.insertCell(2);
+
+        cell1.innerHTML = data.table.rows[i].c[0].v;// setting value to the above cells
+        cell2.innerHTML = data.table.rows[i].c[1].v;
+        cell3.innerHTML = data.table.rows[i].c[2].v;
+    }
+    table.deleteRow(1)
+
+})
+
+SHEET_RANGE = 'E2:G12';
+FULL_URL = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + SHEET_TITLE + '&range=' + SHEET_RANGE );
+
+fetch(FULL_URL)
+.then(res => res.text())
+.then(rep => {
+    let data = JSON.parse(rep.substr(47).slice(0, -2));
+    let length = data.table.rows.length;//total number of values
+
+    var table = document.getElementById('day-2');// table selector
+
+    for (let i = 0; i < length; i++ ) {
+         
+        var newRow = table.insertRow();// insert rows
+
+        var cell1 = newRow.insertCell(0);//inserting colums/cells to above row
+        var cell2 = newRow.insertCell(1);
+        var cell3 = newRow.insertCell(2);
+
+        cell1.innerHTML = data.table.rows[i].c[0].v;// setting value to the above cells
+        cell2.innerHTML = data.table.rows[i].c[1].v;
+        cell3.innerHTML = data.table.rows[i].c[2].v;
+    }
+    table.deleteRow(1)
+
+})
+
+SHEET_RANGE = 'I2:K12';
+FULL_URL = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + SHEET_TITLE + '&range=' + SHEET_RANGE );
+
+fetch(FULL_URL)
+.then(res => res.text())
+.then(rep => {
+    let data = JSON.parse(rep.substr(47).slice(0, -2));
+    let length = data.table.rows.length;//total number of values
+
+    var table = document.getElementById('day-3');// table selector
+
+    for (let i = 0; i < length; i++ ) {
+         
+        var newRow = table.insertRow();// insert rows
+
+        var cell1 = newRow.insertCell(0);//inserting colums/cells to above row
+        var cell2 = newRow.insertCell(1);
+        var cell3 = newRow.insertCell(2);
+
+        cell1.innerHTML = data.table.rows[i].c[0].v;// setting value to the above cells
+        cell2.innerHTML = data.table.rows[i].c[1].v;
+        cell3.innerHTML = data.table.rows[i].c[2].v;
+    }
+    table.deleteRow(1)
+
+})
 /* schedule tabs */
 
 function scheduleTabs(){
