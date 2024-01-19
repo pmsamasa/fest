@@ -278,19 +278,19 @@ function sendEmail(){
     const bodyMessage = `Full Name: ${fullName.value}<br> Email: ${mail.value}<br> Subject: ${text.value}`;
 
     Email.send({
-        SecureToken: "1f658b1a-4d67-4f9e-8621-73bceb768cf3",
-        Username : "inshirah12thbatch@gmail.com",
-        Password : "D84580D602387A29F80744098BE573EF69B6",
-        To : 'inshirah12thbatch@gmail.com',
-        From : "inshirah12thbatch@gmail.com",
+        SecureToken: "b7e1cefb-8dd1-477d-9397-d00d1079cb8f",
+        Username : "fest.masa2024@gmail.com",
+        Password : "5FF5580EC1CB7E3192ED5C4CEBF746E411CD",
+        To : 'fest.masa2024@gmail.com',
+        From : "fest.masa2024@gmail.com",
         Subject : sub.value,
         Body : bodyMessage
     }).then(
       message => {
         if (message == "OK") {
             Swal.fire({
-                title: "Succcess!",
-                text: "Message send successfully!",
+                title: "Thank You!",
+                text: "Feedback send successfully!",
                 icon: "success"
               });
         }
