@@ -17,7 +17,7 @@
     /* fonts */
     --font-size-head: clamp(27px, 4vw, 50px);
     --font-size-image: ;
-    --font-size-mem: 30px;
+    --font-size-mem: 15px;
     --font-size-btn: 4vw;
     --font-famil: 'Ubuntu', sans-serif;
     --font-famil-btn: 'Montserrat', sans-serif;
@@ -212,8 +212,8 @@ img {
     flex: 1;
     padding: 30px;
     background-color: var(--bg-dark-gray);
-    text-align: left;
-    margin: 10px;
+    text-align: center;
+    margin: 5px;
     border-bottom-left-radius: 15px 255px;
     border-bottom-right-radius: 225px 15px;
     border-top-left-radius: 255px 15px;
