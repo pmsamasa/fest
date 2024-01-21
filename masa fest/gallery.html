@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Grid Gallery Layout</title>
+  <!-- Your stylesheet -->
+  <link rel="stylesheet" href="css/gallery.css" />
+</head>
+<section>
+    <ul>
+      <li class="list active" data-filter="all">All</li>
+      <li class="list" data-filter="off">Off Stage</li>
+      <li class="list" data-filter="on">On Stage</li>
+      <li class="list" data-filter="guest">Guest</li>
+      <li class="list" data-filter="other">Other</li>
+    </ul>
+</section>
+<body>
+  <div class="grid-gallery" id="gallery">
+    <div class="grid-item off" onclick="openLightbox('images/img-2.jpg')">
+      <img src="images/img-2.jpg" />
+    </div>
+    <div class="grid-item off" onclick="openLightbox('images/img-4.jpg')">
+      <img src="images/img-4.jpg" />
+    </div>
+    <div class="grid-item off" onclick="openLightbox('images/img-7.jpg')">
+      <img src="images/img-7.jpg" />
+    </div>
+    <div class="grid-item off" onclick="openLightbox('images/img-8.jpg')">
+      <img src="images/img-8.jpg" />
+    </div>
+    <div class="grid-item off" onclick="openLightbox('images/img-9.jpg')">
+      <img src="images/img-9.jpg" />
+    </div>
+    <div class="grid-item on" onclick="openLightbox('images/img-10.jpg')">
+      <img src="images/img-10.jpg" />
+    </div>
+    <div class="grid-item on" onclick="openLightbox('images/img-14.jpg')">
+      <img src="images/img-14.jpg" />
+    </div>
+    <div class="grid-item on" onclick="openLightbox('images/img-16.jpg')">
+      <img src="images/img-16.jpg" />
+    </div>
+    <div class="grid-item on" onclick="openLightbox('images/img-19.jpg')">
+      <img src="images/img-19.jpg" />
+    </div>
+    <div class="grid-item guest" onclick="openLightbox('images/img-20.jpg')">
+      <img src="images/img-20.jpg" />
+    </div>
+    <div class="grid-item guest" onclick="openLightbox('images/img-21.jpg')">
+      <img src="images/img-21.jpg" />
+    </div>
+    <div class="grid-item guest" onclick="openLightbox('images/img-22.jpg')">
+      <img src="images/img-22.jpg" />
+    </div>
+    <div class="grid-item guest" onclick="openLightbox('images/img-23.jpg')">
+      <img src="images/img-23.jpg" />
+    </div>
+    <div class="grid-item other" onclick="openLightbox('images/img-24.jpg')">
+      <img src="images/img-24.jpg" />
+    </div>
+    <div class="grid-item other" onclick="openLightbox('images/img-25.jpg')">
+      <img src="images/img-25.jpg" />
+    </div>
+    <div class="grid-item other" onclick="openLightbox('images/img-26.jpg')">
+      <img src="images/img-26.jpg" />
+    </div>
+    <!-- Repeat for other images -->class="close-btn" onclick="closeLightbox()"
+  </div>
+
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-content">
+      <img id="lightbox-img"/>
+      <svg class="close-btn" onclick="closeLightbox()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line c x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+            
+      <a id="download-btn" class="download-btn" download>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+          <polyline points="7 10 12 15 17 10"></polyline>
+          <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+        
+      </a>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <script src="css/gallery.js"></script>
+</body>
+</html>

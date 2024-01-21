@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0a192f;
+}
+
+
+section ul {
+  display: flex;
+  margin-bottom: 1vw;
+  justify-content: center;
+
+}
+
+section ul li {
+  list-style: none;
+  background-color: #eee;
+  padding: 3vw 3vw;
+  margin: 1vw;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+section ul li.active {
+  background: #03a9f4;
+  color: #fff;
+}
+
+.grid-gallery {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 250px;
+  grid-auto-flow: dense;
+  grid-gap: 20px;
+}
+
+.grid-gallery .grid-item {
+  position: relative;
+  background-color: #1c304e;
+  overflow: hidden;
+}
+
+.grid-gallery .grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.grid-gallery .grid-item:hover img {
+  transform: scale(1.1);
+}
+
+.grid-gallery .grid-item a {
+  cursor: zoom-in;
+}
+
+.grid-gallery .grid-item:nth-child(3n - 2) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+
+/* Write the media query */
+@media (max-width: 996px) {
+  .grid-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-auto-rows: 280px;
+  }
+}
+
+@media (max-width: 640px) {
+  .grid-item:nth-child(1n) {
+    grid-row: unset;
+    grid-column: unset;
+  }
+}
+
+/* Your existing CSS styles */
+/* ... */
+
+/* Lightbox styles */
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+
+
+/* ... (previous CSS) */
+
+.lightbox-content {
+  position: relative;
+}
+
+.lightbox-content img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+body.lightbox-open {
+  overflow: hidden;
+}
+
+
+.close-btn,
+.download-btn {
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+}
+
+.close-btn {
+  margin-left: 50%;
+}
+
+.download-btn {
+  color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .close-btn,
+  .download-btn {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .close-btn,
+  .download-btn {
+    font-size: 12px;
+  }
+}
+
+/* ... (remaining CSS) */
+
+
+
+/* ... (remaining CSS) */
+#lightbox-img {
+  max-width: 80%;
+  max-height: 80vh;
+}
