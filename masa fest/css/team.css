@@ -306,14 +306,24 @@ img {
 }
 
 @media print {
-
-    /* All your print styles go here */
-    #header,
-    #footer,
-    #nav,
-    #bttn {
-        display: none !important;
+    /* Your print-specific styles here */
+    .container-box {
+        display: block !important;
     }
+    /* Add styles to hide unwanted elements */
+    body * {
+        display: none;
+    }
+    .container-box, .container-box *{
+        display: block;
+    }
+    .lightbox , .admit-card , .name, .team{
+        display: grid;
+    }
+    .prin {
+        visibility: hidden;
+    }
+    /* Adjust the above based on your HTML structure */
 }
 
 .prin {
