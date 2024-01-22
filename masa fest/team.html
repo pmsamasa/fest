@@ -16,17 +16,17 @@
                 <h1 class="section-head-title">Team</h1>
             </div>
             <div class="tm-div-btn">
-                <button type="button" class="team-btn active" onclick="toggleContent('content1', event)">team 1</button>
-                <button type="button" class="team-btn" onclick="toggleContent('content2', event)">team 2</button>
-                <button type="button" class="team-btn" onclick="toggleContent('content3', event)">team 3</button>
-                <button type="button" class="team-btn" onclick="toggleContent('content4', event)">team 4</button>
+                <button type="button" class="team-btn active" onclick="groupOne(this)">Team 1</button>
+                <button type="button" class="team-btn" onclick="groupTwo(this)">Team 2</button>
+                <button type="button" class="team-btn" onclick="groupThree(this)">Team 3</button>
+                <button type="button" class="team-btn" onclick="groupFour(this)">Team 4</button>
             </div>
         </div>
     </section>
     <!---------------------------------------------HEADER SECTION END------------------------------------------->
 
     <!---------------------------------------------TEAM SEC-1 START------------------------------------------->
-    <section class="tm-div" id="content1" style="display: block;">
+    <section class="tm-div" id="content1">
         <div class="container">
             <div class="team1">
                 <div class="section-head">
@@ -177,6 +177,22 @@
         </div>
     </section>
     <!---------------------------------------------TEAM SEC-4 START------------------------------------------->
+    <!---------------------------------------------TEAM MEMBER ADMIT CARD START------------------------------------------->
+    <div class="container-box">
+        <div class="lightbox">
+        <div class="admit-card">
+            <h1 id="name">Name</h1>
+            <h3 id="team">Team</h3>
+            <div class="items" id="items-div">
+                <!-- <p class="programs">Anncment</p>
+                <p class="programs">Announcment</p>
+                <p class="programs">Announcment</p> -->
+            </div>
+        </div>    
+    </div>
+    <button id="bttn" class="prin">print mone</button>
+    </div>
+    <!---------------------------------------------TEAM MEMBER ADMIT CARD END------------------------------------------->
     <script src="js/team.js"></script>
 </body>
 
