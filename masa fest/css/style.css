@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 
 /* # variables */
 :root{
@@ -24,14 +25,14 @@
   --border-x-dark: hsla(0, 0%, 0%, 0.7);
 
   /* font family */
-  --ff-carter-one: 'Ubuntu', sans-serif;
+  --ff-carter-one: 'Black Ops One', system-ui;
 
   /* font size */
   --fs-md: 16px;
   --fs-lg: 18px;
   --fs-xl: 22px;
   --fs-2xl: 28px;
-  --fs-3xl: clamp(27px, 4vw, 50px);
+  --fs-3xl: clamp(27px, 6vw, 50px);
   --fs-4xl: clamp(35px, 7vw, 90px);
   --fs-body: var(--fs-md);
 
@@ -144,9 +145,9 @@ button {
 
 .section-header-title {
   font-size: var(--fs-3xl);
-  font-weight: 600;
+  font-weight: 700;
   color: var(--text-x-dark-gray);
-  text-transform: capitalize;
+  text-transform: uppercase;
   font-family: var(--ff-carter-one);
 
 }
