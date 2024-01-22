@@ -306,23 +306,46 @@ img {
 }
 
 @media print {
+
     /* Your print-specific styles here */
     .container-box {
         display: block !important;
     }
+
     /* Add styles to hide unwanted elements */
     body * {
         display: none;
     }
-    .container-box, .container-box *{
+
+    .container-box,
+    .container-box * {
         display: block;
     }
-    .lightbox , .admit-card , .name, .team{
-        display: grid;
+
+    .lightbox {
+        display: flex;
+        align-items: center;
     }
+
+    .admit-card {
+        display: block;
+        max-width: 80%;
+        max-height: 80%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .items {
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .prin {
         visibility: hidden;
     }
+
     /* Adjust the above based on your HTML structure */
 }
 
