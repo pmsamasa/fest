@@ -2,6 +2,7 @@
 /* # fonts  */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 
 /* # variables */
 :root{
@@ -23,7 +24,7 @@
   --border-x-dark: hsla(0, 0%, 0%, 0.7);
 
   /* font family */
-  --ff-carter-one: 'Carter One', cursive;
+  --ff-carter-one: 'Ubuntu', sans-serif;
 
   /* font size */
   --fs-md: 16px;
@@ -467,20 +468,12 @@ button {
   margin: 0 0 20px;
   color: var(--text-x-dark-gray);
   font-family: var(--ff-carter-one);
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
-.home-subtitle {
-  font-weight: 400;
-  font-size: var(--fs-lg);
-  display: grid;
-  gap: 8px;
-}
 
-.home-subtitle i{
-  margin-right: 5px;
-  color: var(--main-color);
-}
+
+
 
 .home-box {
   height: 400px;
