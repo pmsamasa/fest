@@ -629,8 +629,8 @@ button {
   max-width: 900px;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0 clamp(30px, 15vw, 200px);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
   align-items: start;
 }
 
@@ -638,21 +638,19 @@ button {
   position: relative;
 }
 
-.performers-item:nth-child(even){
-  margin-top: 200px;
-}
+
 
 .performers-info {
-  padding: 15px 20px;
+  padding: 5px 10px;
   position: absolute;
   left: 20px;
   right: 20px;
-  bottom: 20px;
+  bottom: 5px;
   z-index: 1;
 }
 
 .performers-backdrop {
-  background-color: var(--bg-x-light-yellow);
+  background-color: var(--bg-light-yellow);
   position: absolute;
   left: 0;
   top: 0;
@@ -675,11 +673,18 @@ button {
 
 @media(max-width: 575px){
   .performers-items{
-    grid-template-columns: repeat(1,1fr);
-    gap: 30px;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
   }
-  .performers-item:nth-child(even){
-    margin-top: 0;
+  .performers-item {
+    margin-bottom: 30px;
+  }
+ 
+  .performers-info {
+    padding: 2px 3px;
+    left: 8px;
+    bottom: -32px;
+    width: 90%;
   }
 }
 /* # schedule */
