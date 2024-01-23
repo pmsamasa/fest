@@ -21,8 +21,8 @@ document.querySelector('.team-btn').click();
 
 
 //team for loop
-let SHEET_ID = '1I8xHKnUVPE8LesN7jw9BmqkLIFr7anJxhsmuVFSA-Mk'
-let SHEET_RANGE = 'A1:D25'
+let SHEET_ID = '1nS9_1zxST9q-8k4-g47eAMYmfOBnFkvQqTV8sYFcrAQ'
+let SHEET_RANGE = 'A1:D38'
 
 let FULL_URL = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + '&range=' + SHEET_RANGE);
 
@@ -37,6 +37,7 @@ fetch(FULL_URL)
         let length = data.table.rows.length;
 
 
+        console.log(data.table);
         for (let i = 0; i < length; i++) {
             let NewBoxPlayer = document.createElement('div');
             NewBoxPlayer.id = ("box" + i);
@@ -55,7 +56,7 @@ fetch(FULL_URL)
             NewBoxhe.className = "aal";
             team_c.append(NewBoxhe);
             NewBoxhe.innerHTML = data.table.rows[i].c[2].v;
-            if(i !== 24){
+            if(i <= 35){
             let NewBoxshe = document.createElement('div');
             NewBoxshe.id = ("box" + i);
             NewBoxshe.className = "aal";
