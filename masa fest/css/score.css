@@ -158,12 +158,12 @@ div h1, div h2{
 .button {
     align-items: center;
     appearance: none;
-    background-color: var(--main-color);
     border-radius: 8px;
     border-width: 2px;
-    border-color: var(--text-black);
     box-sizing: border-box;
     color: var(--text-black);
+    background-color: var(--bg-x-light-yellow);
+    border-color: var(--text-black);
     cursor: pointer;
     display: inline-flex;
     font-family: "JetBrains Mono", monospace;
@@ -211,7 +211,7 @@ div h1, div h2{
 
   .active-b{
     color: var(--text-black);
-    background-color: var(--bg-x-light-yellow);
+    background-color: var(--main-color);
     border-color: var(--text-black);
 
   }
