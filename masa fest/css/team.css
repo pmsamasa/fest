@@ -207,6 +207,7 @@ img {
 }
 
 .aal {
+    text-transform: uppercase;
     flex: 1;
     padding: 30px;
     background-color: var(--border-color);
