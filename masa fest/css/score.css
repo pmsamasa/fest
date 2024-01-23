@@ -1,4 +1,23 @@
+
+:root{ --main-color: hsl(345, 90%, 60%);
+
+  /* text colors */
+  --text-dark-gray: hsl(0, 0%, 25%);
+  --text-x-dark-gray: hsl(0, 0%, 10%);
+  --text-black: hsl(0, 0%, 0%);
+
+  /* bg colors */
+  --bg-light-yellow: hsl(42, 26%, 77%);
+  --bg-x-light-yellow: hsl(42, 40%, 87%);
+  --bg-green: hsl(167, 57%, 52%);
+  --bg-purple: hsl(253, 79%, 77%);
+
+  /* border colors */
+  --border-dark: hsla(0, 0%, 0%, 0.1);
+  --border-x-dark: hsla(0, 0%, 0%, 0.7);
+}
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,600;0,800;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 html{
     scroll-behavior: smooth;
@@ -12,8 +31,8 @@ html{
 
 body{
     font-family: 'Montserrat', sans-serif;
-    background-color: rgb(161, 160, 160);
-    color: #ffffff;
+    background-color: var(--bg-light-yellow);
+    color: var(--text-black);
 }
 
 ::before,::after{
@@ -47,19 +66,18 @@ section , .top{
     flex-flow: column;
 }
 
-.title h1{
-  display: flex;
-  align-self: center;
-  margin: 3rem;
-  font-size: 6dvw;
+div h1, div h2{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: var(--text-x-dark-gray);
 }
 /* card area */
 .card {
     box-sizing: border-box;
     width: 190px;
     height: 254px;
-    background: rgba(217, 217, 217, 0.58);
-    border: 1px solid white;
+    background: var(--bg-x-light-yellow);
+    border: 1px solid var(--text-black);
     box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
     backdrop-filter: blur(6px);
     border-radius: 17px;
@@ -140,13 +158,12 @@ section , .top{
 .button {
     align-items: center;
     appearance: none;
-    background-color: #EEF2FF;
+    background-color: var(--main-color);
     border-radius: 8px;
     border-width: 2px;
-    border-color: #536DFE;
-    box-shadow: rgba(83, 109, 254, 0.2) 0 2px 4px, rgba(83, 109, 254, 0.15) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    border-color: var(--text-black);
     box-sizing: border-box;
-    color: #536DFE;
+    color: var(--text-black);
     cursor: pointer;
     display: inline-flex;
     font-family: "JetBrains Mono", monospace;
@@ -172,16 +189,16 @@ section , .top{
   
   .button:focus {
     outline: none;
-    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(83, 109, 254, 0.4) 0 2px 4px, rgba(83, 109, 254, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    
   }
   
   .button:hover {
-    box-shadow: rgba(83, 109, 254, 0.3) 0 4px 8px, rgba(83, 109, 254, 0.2) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    
     transform: translateY(-2px);
   }
   
   .button:active {
-    box-shadow: #D6D6E7 0 3px 7px inset;
+    
     transform: translateY(2px);
   }
 
@@ -193,10 +210,10 @@ section , .top{
   }
 
   .active-b{
-    color: #ffffff;
-    background-color: #536DFE;
-    border-color: #EEF2FF;
-    box-shadow: rgba(83, 109, 254, 0.2) 0 2px 4px, rgba(83, 109, 254, 0.15) 0 7px 13px -3px, #5353e7 0 -3px 0 inset;
+    color: var(--text-black);
+    background-color: var(--bg-x-light-yellow);
+    border-color: var(--text-black);
+
   }
 
 
@@ -220,7 +237,7 @@ table {
     border-collapse: collapse;
     margin-left: auto;
     margin-right: auto;
-    color: #536DFE;
+    color: var(--text-black);
 }
 
 .table-div {
@@ -231,7 +248,7 @@ table {
 table             { 
     border-spacing: 1; 
     border-collapse: collapse; 
-    background:white;
+    background:var(--bg-x-light-yellow);
     border-radius:6px;
     overflow:hidden;
     max-width:1100px;
@@ -245,11 +262,11 @@ table             {
   
     thead tr        { 
       height:60px;
-      background:#FFED86;
+      background:var(--main-color);
       font-size:16px;
     }
     
-    tbody tr        { height:48px; border-bottom:1px solid #E3F1D5 ;
+    tbody tr        { height:48px; border-bottom:1px solid var(--text-black) ;
       &:last-child  { border:0; }
     }
     

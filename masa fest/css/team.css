@@ -99,7 +99,7 @@ img {
     font-size: var(--font-size-btn);
     font-family: var(--font-famil-btn);
     font-weight: 500;
-    background-color: var(--bg-dark-gray);
+    background-color: var(--border-color);
     background-image: none;
     background-position: 0 90%;
     background-repeat: repeat no-repeat;
@@ -136,8 +136,8 @@ img {
 }
 
 .active {
-    color: var(--bg-black);
-    background-color: var(--text-color);
+    color: var(--text-color);
+    background-color: var(--bg-dark-gray);
 }
 
 /* images */
@@ -185,7 +185,7 @@ img {
     left: 1vw;
     width: 90%;
     min-height: 0vw;
-    background: var(--bg-black);
+    background: var(--border-color);
     opacity: 0;
     display: flex;
     flex-direction: column;
@@ -221,14 +221,14 @@ img {
 .aal {
     flex: 1;
     padding: 30px;
-    background-color: var(--bg-dark-gray);
+    background-color: var(--border-color);
     text-align: center;
     margin: 5px;
     border-bottom-left-radius: 15px 255px;
     border-bottom-right-radius: 225px 15px;
     border-top-left-radius: 255px 15px;
     border-top-right-radius: 15px 225px;
-    border: 2px solid var(--text-color);
+    border: 4px solid var(--bg-dark-gray);
     box-shadow: var(--text-color) -5px 15px 25px -15px;
     color: var(--text-color);
     font-size: var(--font-size-mem);
@@ -244,123 +244,4 @@ img {
     .names {
         font-size: 25px;
     }
-}
-
-/*lIGHTBOX SETUP*/
-
-.container-box {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-}
-
-.lightbox {
-    background-color: #fff;
-    color: black;
-    position: relative;
-    width: 50%;
-    height: 50%;
-    left: 25%;
-    top: 25%;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-
-}
-
-.admit-card {
-    display: block;
-    max-width: 80%;
-    max-height: 80%;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    margin: 0 auto;
-}
-
-.items {
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.items p {
-    flex: 1;
-    font-family: Anek-Malayalam;
-    border: 2px solid black;
-    border-radius: 5px;
-    padding: 3px;
-    margin: 5px;
-}
-
-.admit-card h1,
-.admit-card h3 {
-    font-family: var(--font-famil);
-    border: 3px solid black;
-    padding: 3px;
-    margin: 5px;
-    border-radius: 5px;
-
-}
-
-@media print {
-
-    /* Your print-specific styles here */
-    .container-box {
-        display: block !important;
-    }
-
-    /* Add styles to hide unwanted elements */
-    body * {
-        display: none;
-    }
-
-    .container-box,
-    .container-box * {
-        display: block;
-    }
-
-    .lightbox {
-        display: flex;
-        align-items: center;
-    }
-
-    .admit-card {
-        display: block;
-        max-width: 80%;
-        max-height: 80%;
-        display: flex;
-        flex-flow: column;
-        align-items: center;
-        margin: 0 auto;
-    }
-    .items {
-        text-align: center;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .prin {
-        visibility: hidden;
-    }
-
-    /* Adjust the above based on your HTML structure */
-}
-
-.prin {
-    padding: 10px;
-    padding-left: 15px;
-    background-color: rgb(3, 178, 237);
-    cursor: pointer;
-    color: white;
-    position: relative;
-    left: 25%;
-    top: 25%;
-    font-family: var(--font-famil);
-    border-radius: 8px;
-    margin-left: 23%;
 }

@@ -1,3 +1,22 @@
+
+:root{ --main-color: hsl(345, 90%, 60%);
+
+  /* text colors */
+  --text-dark-gray: hsl(0, 0%, 25%);
+  --text-x-dark-gray: hsl(0, 0%, 10%);
+  --text-black: hsl(0, 0%, 0%);
+
+  /* bg colors */
+  --bg-light-yellow: hsl(42, 26%, 77%);
+  --bg-x-light-yellow: hsl(42, 40%, 87%);
+  --bg-green: hsl(167, 57%, 52%);
+  --bg-purple: hsl(253, 79%, 77%);
+
+  /* border colors */
+  --border-dark: hsla(0, 0%, 0%, 0.1);
+  --border-x-dark: hsla(0, 0%, 0%, 0.7);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +26,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #0a192f;
+  background-color: var(--bg-light-yellow);
 }
 
 
@@ -20,7 +39,7 @@ section ul {
 
 section ul li {
   list-style: none;
-  background-color: #eee;
+  background-color: var(--main-color);
   padding: 3vw 3vw;
   margin: 1vw;
   letter-spacing: 1px;
@@ -31,6 +50,7 @@ section ul li {
   justify-items: center;
   align-items: center;
   align-content: center;
+  color: var(--text-black);
 }
 
 @media (min-width : 600px){
@@ -40,8 +60,8 @@ section ul li {
 }
 
 section ul li.active {
-  background: #03a9f4;
-  color: #fff;
+  background: var(--bg-x-light-yellow);
+  color: var(--text-black);
 }
 
 .grid-gallery {
@@ -58,7 +78,7 @@ section ul li.active {
 
 .grid-gallery .grid-item {
   position: relative;
-  background-color: #1c304e;
+  background-color: var(--bg-x-light-yellow);
   overflow: hidden;
 }
 
