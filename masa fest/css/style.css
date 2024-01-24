@@ -139,8 +139,9 @@ button {
 }
 /* # section header */
 .section-header {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   text-align: center;
+  margin-top: 20px;
 }
 
 .section-header-title {
@@ -154,7 +155,8 @@ button {
 
 @media(max-width: 767px){
   .section-header{
-    margin-bottom: 45px;
+    margin-bottom: 20px;
+    margin-top: 40px;
   }
 }
 /* # aos */
@@ -688,9 +690,7 @@ button {
   }
 }
 /* # schedule */
-.schedule {
-  padding: var(--section-py);
-}
+
 
 .schedule-tabs {
   text-align: center;
@@ -823,14 +823,14 @@ button {
 
 .schedule-table td,
 .schedule-table th{
-  padding: 20px;
-  text-align: left;
+  padding: 10px;
+  text-align: center;
   text-transform: capitalize;
 }
 .schedule2-table td,
 .schedule2-table th{
-  padding: 20px;
-  text-align: left;
+  padding: 10px;
+  text-align: center;
   text-transform: capitalize;
 }
 
@@ -844,13 +844,13 @@ button {
 @media(max-width: 575px){
   .schedule-table td,
   .schedule-table th{
-    font-size: 13px;
+    font-size: 10px;
   }
 }
 @media(max-width: 575px){
   .schedule2-table td,
   .schedule2-table th{
-    font-size: 13px;
+    font-size: 10px;
   }
 }
 
