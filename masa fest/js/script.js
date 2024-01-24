@@ -120,7 +120,7 @@ fetch(FULL_URL)
 
     })
 
-SHEET_RANGE = 'E2:G12';
+SHEET_RANGE = 'F2:I6';
 FULL_URL = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + SHEET_TITLE + '&range=' + SHEET_RANGE);
 
 fetch(FULL_URL)
@@ -138,16 +138,18 @@ fetch(FULL_URL)
             var cell1 = newRow.insertCell(0);//inserting colums/cells to above row
             var cell2 = newRow.insertCell(1);
             var cell3 = newRow.insertCell(2);
+            var cell4 = newRow.insertCell(3);
 
             cell1.innerHTML = data.table.rows[i].c[0].v;// setting value to the above cells
             cell2.innerHTML = data.table.rows[i].c[1].v;
             cell3.innerHTML = data.table.rows[i].c[2].v;
+            cell4.innerHTML = data.table.rows[i].c[3].v;
         }
         table.deleteRow(1)
 
     })
 
-SHEET_RANGE = 'I2:K12';
+SHEET_RANGE = 'K2:N5';
 FULL_URL = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + SHEET_TITLE + '&range=' + SHEET_RANGE);
 
 fetch(FULL_URL)
@@ -165,16 +167,18 @@ fetch(FULL_URL)
             var cell1 = newRow.insertCell(0);//inserting colums/cells to above row
             var cell2 = newRow.insertCell(1);
             var cell3 = newRow.insertCell(2);
+            var cell4 = newRow.insertCell(3);
 
             cell1.innerHTML = data.table.rows[i].c[0].v;// setting value to the above cells
             cell2.innerHTML = data.table.rows[i].c[1].v;
             cell3.innerHTML = data.table.rows[i].c[2].v;
+            cell4.innerHTML = data.table.rows[i].c[3].v;
         }
         table.deleteRow(1)
 
     })
 
-SHEET_RANGE = 'A9:C13';
+SHEET_RANGE = 'A9:D12';
 FULL_URL = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + SHEET_TITLE + '&range=' + SHEET_RANGE);
 
 fetch(FULL_URL)
@@ -192,17 +196,19 @@ fetch(FULL_URL)
             var cell1 = newRow.insertCell(0);//inserting colums/cells to above row
             var cell2 = newRow.insertCell(1);
             var cell3 = newRow.insertCell(2);
+            var cell4 = newRow.insertCell(3);
 
             cell1.innerHTML = data.table.rows[i].c[0].v;// setting value to the above cells
             cell2.innerHTML = data.table.rows[i].c[1].v;
             cell3.innerHTML = data.table.rows[i].c[2].v;
+            cell4.innerHTML = data.table.rows[i].c[3].v;
         }
         table.deleteRow(1)
 
     })
 
 
-SHEET_RANGE = 'M2:O12';
+SHEET_RANGE = 'P2:S6';
 FULL_URL = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + SHEET_TITLE + '&range=' + SHEET_RANGE);
 
 fetch(FULL_URL)
@@ -220,15 +226,17 @@ fetch(FULL_URL)
             var cell1 = newRow.insertCell(0);//inserting colums/cells to above row
             var cell2 = newRow.insertCell(1);
             var cell3 = newRow.insertCell(2);
+            var cell4 = newRow.insertCell(3);
 
             cell1.innerHTML = data.table.rows[i].c[0].v;// setting value to the above cells
             cell2.innerHTML = data.table.rows[i].c[1].v;
             cell3.innerHTML = data.table.rows[i].c[2].v;
+            cell4.innerHTML = data.table.rows[i].c[3].v;
         }
         table.deleteRow(1)
 
     })
-SHEET_RANGE = 'Q2:S12';
+SHEET_RANGE = 'U2:X6';
 FULL_URL = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + SHEET_TITLE + '&range=' + SHEET_RANGE);
 
 fetch(FULL_URL)
@@ -246,10 +254,12 @@ fetch(FULL_URL)
             var cell1 = newRow.insertCell(0);//inserting colums/cells to above row
             var cell2 = newRow.insertCell(1);
             var cell3 = newRow.insertCell(2);
+            var cell4 = newRow.insertCell(3);
 
             cell1.innerHTML = data.table.rows[i].c[0].v;// setting value to the above cells
             cell2.innerHTML = data.table.rows[i].c[1].v;
             cell3.innerHTML = data.table.rows[i].c[2].v;
+            cell4.innerHTML = data.table.rows[i].c[3].v;
         }
         table.deleteRow(1)
 
