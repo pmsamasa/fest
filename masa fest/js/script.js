@@ -14,6 +14,42 @@ window.addEventListener("load", () => {
     });
 });
 
+// JavaScript to handle arrow button clicks
+document.addEventListener("DOMContentLoaded", function() {
+    const tabsContainer = document.querySelector('.schedule-tabs');
+    const tabs = document.querySelectorAll('.js-schedule-tab');
+    const arrowLeft = document.getElementById('arrow-left');
+    const arrowRight = document.getElementById('arrow-right');
+
+    let currentIndex = 0;
+
+    // Function to toggle visibility of tabs based on the current index
+    function toggleTabs() {
+        tabs.forEach((tab, index) => {
+            if (index === currentIndex || index === currentIndex + 1) {
+                tab.classList.remove('hidden');
+            } else {
+                tab.classList.add('hidden');
+            }
+        });
+    }
+
+    // Event listener for left arrow click
+    arrowLeft.addEventListener('click', function() {
+        currentIndex = Math.max(0, currentIndex - 1);
+        toggleTabs();
+    });
+
+    // Event listener for right arrow click
+    arrowRight.addEventListener('click', function() {
+        currentIndex = Math.min(tabs.length - 2, currentIndex + 1);
+        toggleTabs();
+    });
+
+    // Initial toggle to show only the first two buttons
+    toggleTabs();
+});
+
 
 /* header menu */
 

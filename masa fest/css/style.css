@@ -854,6 +854,20 @@ button {
   }
 }
 
+/* Add a new class for hiding/showing buttons */
+.hidden {
+  display: none;
+}
+
+/* Add a new class for arrow buttons */
+.arrow-btn {
+  cursor: pointer;
+  color: var(--main-color);
+  border: none;
+  background-color: var(--bg-x-light-yellow);
+  font-size: 20px;
+}
+
 /* # contact */
 .contact {
   padding: var(--section-py) 0;
