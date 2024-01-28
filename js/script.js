@@ -214,7 +214,7 @@ fetch(FULL_URL)
 
     })
 
-SHEET_RANGE = 'A9:D12';
+SHEET_RANGE = 'A9:D13';
 FULL_URL = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + SHEET_TITLE + '&range=' + SHEET_RANGE);
 
 fetch(FULL_URL)
