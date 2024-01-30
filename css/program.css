@@ -211,3 +211,41 @@ table             {
 #general, #aliya{
   display: none;
 }
+
+/* tv section */
+@media (min-width : 1400px) {
+  .button {
+    height: 7dvh;
+    font-size: 1.3dvw;
+    margin: 8px;
+  }
+  .buttons-div {
+    margin: 10px 0 5px 0;
+  }
+  .table-div {
+    width: 90dvw;
+    margin-left: 5dvw;
+  }
+  table {
+    max-width: -webkit-fill-available;
+    border-radius: 12px;
+  }
+  table th {
+    user-select: none;
+    font-size: 1.5dvw;
+  }
+  table td {
+    user-select: none;
+    font-size: 1.3dvw;
+  }
+  table thead tr {
+    height: 7dvh;
+  }
+  table tbody tr {
+    height: 6dvh;
+  }
+  th , td {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
