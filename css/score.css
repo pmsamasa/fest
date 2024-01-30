@@ -301,5 +301,67 @@ table             {
 }
 
 
-/* table section end */
+/* tv section */
+@media (min-width : 1400px) {
+  .our {
+    width: 20dvw;
+    height: 80%;
+  }
+
+  .card-div {
+    padding: 0;
+  }
+
+  .container {
+    max-width: 95dvw;
+  }
+  .button {
+    height: 7dvh;
+    font-size: 1.3dvw;
+    margin: 8px;
+  }
+  .buttons-div {
+    margin: 10px 0 5px 0;
+  }
+  .table-div {
+    width: 90dvw;
+    margin-left: 5dvw;
+  }
+  table {
+    max-width: -webkit-fill-available;
+    border-radius: 12px;
+  }
+  table th {
+    user-select: none;
+    font-size: 1.5dvw;
+  }
+  table td {
+    user-select: none;
+    font-size: 1.3dvw;
+  }
+  table thead tr {
+    height: 7dvh;
+  }
+  table tbody tr {
+    height: 6dvh;
+  }
+  th , td {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 2100px) {
+  .our {
+    height: 100%;
+  }
+
+  .card-mng {
+    padding-top: 5dvh;
+  }
+
+  .container {
+    max-width: 100dvw;
+  }
+}
 
