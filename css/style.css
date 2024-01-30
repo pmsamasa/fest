@@ -32,8 +32,8 @@
   --fs-lg: 18px;
   --fs-xl: 22px;
   --fs-2xl: 28px;
-  --fs-3xl: clamp(27px, 6vw, 50px);
-  --fs-4xl: clamp(35px, 10vw, 90px);
+  --fs-3xl: 3vh;
+  --fs-4xl: 4vh;
   --fs-body: var(--fs-md);
 
   /* padding */
@@ -157,6 +157,11 @@ button {
   .section-header{
     margin-bottom: 20px;
     margin-top: 40px;
+  }
+}
+@media(min-width: 1100px){
+  .section-header-title {
+    font-size: 5vh;
   }
 }
 /* # aos */
@@ -552,6 +557,12 @@ button {
   .home-img-box1,
   .home-img-box2{
     max-width: 150px;
+  }
+}
+
+@media(min-width:1100px){
+  .home-title{
+    font-size: 6vh;
   }
 }
 /* # about */
