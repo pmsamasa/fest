@@ -142,7 +142,7 @@ img {
 }
 
 .image.middle {
-    margin-top: -20px;
+    margin-top: -5vw;
     /* Adjust the value to control the vertical position */
 }
 
@@ -155,8 +155,12 @@ img {
         width: 25vw;
     }
 
-    .aju {
-        width: 100%;
+}
+
+@media screen and (min-width: 1701px) {
+    .image {
+        margin: 0;
+        width: 13vw;
     }
 }
 
