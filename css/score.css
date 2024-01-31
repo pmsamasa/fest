@@ -302,18 +302,23 @@ table             {
 
 
 /* tv section */
-@media (min-width : 1400px) {
+@media (min-width : 1700px) {
   .our {
-    width: 20dvw;
+    width: 15%;
     height: 80%;
   }
 
   .card-div {
-    padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 0 5%; /* Adjust padding as needed */
   }
 
   .container {
     max-width: 95dvw;
+    margin: 0;
   }
   .button {
     height: 7dvh;
@@ -334,6 +339,8 @@ table             {
   table th {
     user-select: none;
     font-size: 1.5dvw;
+    background-color: var(--main-color); /* Enhance table header visibility */
+    color: var(--text-black); /* Enhance table header visibility */
   }
   table td {
     user-select: none;
@@ -351,17 +358,4 @@ table             {
   }
 }
 
-@media (min-width: 2100px) {
-  .our {
-    height: 100%;
-  }
-
-  .card-mng {
-    padding-top: 5dvh;
-  }
-
-  .container {
-    max-width: 100dvw;
-  }
-}
 
