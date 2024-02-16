@@ -93,7 +93,7 @@ img {
     flex: 1;
     padding: 10px 14px;
     text-align: center;
-    color: hsl(39, 84%, 10%);
+    color: var(--text-color);
     margin: 5px;
     text-transform: uppercase;
     font-size: var(--font-size-btn);
@@ -103,7 +103,7 @@ img {
     border: 2px solid hsl(0, 100%, 98%);
     cursor: pointer;
     border-radius: 10px;
-    box-shadow: 4px 4px hsl(41, 39%, 29%);
+    box-shadow: 4px 4px #393939;
 }
 
 @media (max-width: 900px) {
@@ -218,9 +218,9 @@ img {
     text-align: center;
     margin: 5px;
     border-radius: 10px;
-    border: 2px solid hsl(41, 39%, 29%);
-    box-shadow: 4px 4px hsl(41, 39%, 29%);
-    color: hsl(39, 84%, 10%);
+    border: 2px solid #393939;
+    box-shadow: 4px 4px #393939;
+    color: var(--text-color);
     font-size: var(--font-size-mem);
 }
 
