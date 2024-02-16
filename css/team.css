@@ -10,11 +10,11 @@
 /* Variables */
 :root {
     /* bg colors */
-    --bg-black: hsl(42, 26%, 77%);
-    --bg-dark-gray: hsl(345, 90%, 60%);
+    --bg-black: #FFFFFF;
+    --bg-dark-gray: #f6ab06;
 
     /* border colors */
-    --border-color: hsl(42, 40%, 87%);
+    --border-color: hsl(0, 0%, 100%);
 
     /* text color */
     --text-color: hsl(0, 0%, 0%);
