@@ -640,6 +640,7 @@ button {
 .performers-items {
   max-width: 250px;
   margin: auto;
+  margin-bottom: 10px;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 20px;
@@ -665,7 +666,7 @@ button {
   position: absolute;
   left: 20px;
   right: 20px;
-  bottom: 5px;
+  bottom: -5px;
   z-index: 1;
 }
 
@@ -683,27 +684,36 @@ button {
   color: var(--text-x-dark-gray);
   text-transform: capitalize;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 13px;
+  text-align: center;
 }
 
 .performers-job {
   text-transform: capitalize;
+  font-size: 10px;
   margin-top: 4px;
+  text-align: center;
 }
 
 @media(max-width: 575px){
   .performers-items{
+    grid-template-columns: repeat(1,1fr);
+    gap: 10px;
+    margin-bottom: 0;
+    max-width: 170px;
+  }
+  .performers-items2{
     grid-template-columns: repeat(3,1fr);
     gap: 10px;
   }
   .performers-item {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
  
   .performers-info {
     padding: 2px 3px;
     left: 8px;
-    bottom: -32px;
+    bottom: -5px;
     width: 90%;
   }
 }
