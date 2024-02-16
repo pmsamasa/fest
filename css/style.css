@@ -731,6 +731,15 @@ button {
     width: 90%;
   }
 }
+@media(max-width: 499px){
+  .performers-name {
+    font-size: 10px;
+  }
+  
+  .performers-job {
+    font-size: 7px;
+  }
+}
 /* # schedule */
 
 
