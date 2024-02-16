@@ -242,6 +242,126 @@ fetch(FULL_URL)
         table.deleteRow(1)
 
     })
+SHEET_RANGE = 'F9:I12';
+FULL_URL = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + SHEET_TITLE + '&range=' + SHEET_RANGE);
+
+fetch(FULL_URL)
+    .then(res => res.text())
+    .then(rep => {
+        let data = JSON.parse(rep.substr(47).slice(0, -2));
+        let length = data.table.rows.length;//total number of values
+
+        var table = document.getElementById('day-5');// table selector
+
+        for (let i = 0; i < length; i++) {
+
+            var newRow = table.insertRow();// insert rows
+
+            var cell1 = newRow.insertCell(0);//inserting colums/cells to above row
+            var cell2 = newRow.insertCell(1);
+            var cell3 = newRow.insertCell(2);
+            var cell4 = newRow.insertCell(3);
+
+            cell1.innerHTML = data.table.rows[i].c[0].v;// setting value to the above cells
+            cell2.innerHTML = data.table.rows[i].c[1].v;
+            cell3.innerHTML = data.table.rows[i].c[2].v;
+            cell4.innerHTML = data.table.rows[i].c[3].v;
+        }
+        table.deleteRow(1)
+
+    })
+SHEET_RANGE = 'K9:N13';
+FULL_URL = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + SHEET_TITLE + '&range=' + SHEET_RANGE);
+
+fetch(FULL_URL)
+    .then(res => res.text())
+    .then(rep => {
+        let data = JSON.parse(rep.substr(47).slice(0, -2));
+        let length = data.table.rows.length;//total number of values
+
+        var table = document.getElementById('day-6');// table selector
+
+        for (let i = 0; i < length; i++) {
+
+            var newRow = table.insertRow();// insert rows
+
+            var cell1 = newRow.insertCell(0);//inserting colums/cells to above row
+            var cell2 = newRow.insertCell(1);
+            var cell3 = newRow.insertCell(2);
+            var cell4 = newRow.insertCell(3);
+
+            cell1.innerHTML = data.table.rows[i].c[0].v;// setting value to the above cells
+            cell2.innerHTML = data.table.rows[i].c[1].v;
+            cell3.innerHTML = data.table.rows[i].c[2].v;
+            cell4.innerHTML = data.table.rows[i].c[3].v;
+        }
+        table.deleteRow(1)
+
+    })
+SHEET_RANGE = 'A16:D16';
+FULL_URL = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + SHEET_TITLE + '&range=' + SHEET_RANGE);
+
+fetch(FULL_URL)
+    .then(res => res.text())
+    .then(rep => {
+        let data = JSON.parse(rep.substr(47).slice(0, -2));
+        let length = data.table.rows.length;//total number of values
+
+        var table = document.getElementById('day-7');// table selector
+
+        for (let i = 0; i < length; i++) {
+
+            var newRow = table.insertRow();// insert rows
+
+            var cell1 = newRow.insertCell(0);//inserting colums/cells to above row
+            var cell2 = newRow.insertCell(1);
+            var cell3 = newRow.insertCell(2);
+            var cell4 = newRow.insertCell(3);
+
+            cell1.innerHTML = data.table.rows[i].c[0].v;// setting value to the above cells
+            cell2.innerHTML = data.table.rows[i].c[1].v;
+            cell3.innerHTML = data.table.rows[i].c[2].v;
+            cell4.innerHTML = data.table.rows[i].c[3].v;
+        }
+        table.deleteRow(1)
+
+    });
+//////////////////////////////////////////////ON STAGE DATA///////////////////////////////////////////////////////////
+// JavaScript to handle arrow button clicks
+document.addEventListener("DOMContentLoaded", function() {
+    const tabsContainer = document.querySelector('.schedule-tabs');
+    const tabs = document.querySelectorAll('.js-schedule2-tab');
+    const arrowLeft2 = document.getElementById('arrow-left2');
+    const arrowRight2 = document.getElementById('arrow-right2');
+
+    let currentIndex = 0;
+
+    // Function to toggle visibility of tabs based on the current index
+    function toggleTabs() {
+        tabs.forEach((tab, index) => {
+            if (index === currentIndex || index === currentIndex + 1) {
+                tab.classList.remove('hidden');
+            } else {
+                tab.classList.add('hidden');
+            }
+        });
+    }
+
+    // Event listener for left arrow click
+    arrowLeft2.addEventListener('click', function() {
+        currentIndex = Math.max(0, currentIndex - 1);
+        toggleTabs();
+    });
+
+    // Event listener for right arrow click
+    arrowRight2.addEventListener('click', function() {
+        currentIndex = Math.min(tabs.length - 2, currentIndex + 1);
+        toggleTabs();
+    });
+
+    // Initial toggle to show only the first two buttons
+    toggleTabs();
+});
 
 
 SHEET_RANGE = 'P2:S6';
@@ -282,6 +402,34 @@ fetch(FULL_URL)
         let length = data.table.rows.length;//total number of values
 
         var table = document.getElementById('onday-2');// table selector
+
+        for (let i = 0; i < length; i++) {
+
+            var newRow = table.insertRow();// insert rows
+
+            var cell1 = newRow.insertCell(0);//inserting colums/cells to above row
+            var cell2 = newRow.insertCell(1);
+            var cell3 = newRow.insertCell(2);
+            var cell4 = newRow.insertCell(3);
+
+            cell1.innerHTML = data.table.rows[i].c[0].v;// setting value to the above cells
+            cell2.innerHTML = data.table.rows[i].c[1].v;
+            cell3.innerHTML = data.table.rows[i].c[2].v;
+            cell4.innerHTML = data.table.rows[i].c[3].v;
+        }
+        table.deleteRow(1)
+
+    })
+SHEET_RANGE = 'Z2:AC4';
+FULL_URL = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + SHEET_TITLE + '&range=' + SHEET_RANGE);
+
+fetch(FULL_URL)
+    .then(res => res.text())
+    .then(rep => {
+        let data = JSON.parse(rep.substr(47).slice(0, -2));
+        let length = data.table.rows.length;//total number of values
+
+        var table = document.getElementById('onday-3');// table selector
 
         for (let i = 0; i < length; i++) {
 

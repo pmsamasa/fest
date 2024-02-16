@@ -1016,7 +1016,7 @@ button {
   margin: 0 4px;
   border-radius: 50%;
   transition: all 0.3s ease;
-  color: var(--main-color);
+  color: var(--bg-grey);
 }
 
 .footer-social a:hover{
