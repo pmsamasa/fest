@@ -1,4 +1,4 @@
-:root{ --main-color: hsl(345, 90%, 60%);
+:root{ --main-color: #f6ab06;
 
   /* text colors */
   --text-dark-gray: hsl(0, 0%, 100%);
@@ -6,6 +6,7 @@
   --text-black: hsl(0, 0%, 0%);
 
   /* bg colors */
+  --bg-white: #FFFFFF;
   --bg-light-yellow: hsl(0, 0%, 100%);
   --bg-x-light-yellow: hsl(42, 40%, 87%);
   --bg-green: hsl(167, 57%, 52%);
@@ -98,7 +99,7 @@ section , .top{
 .button {
     align-items: center;
     appearance: none;
-    background-color: var(--main-color);
+    background-color: var(--bg-white);
     border-radius: 8px;
     border-color: var(--text-black);
     border-width: 2px;    
@@ -150,7 +151,7 @@ section , .top{
 
   .active-b{
     color: var(--text-black);
-    background-color: var(--bg-x-light-yellow);
+    background-color: var(--main-color);
     border-color: var(--text-black);
   }
 

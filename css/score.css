@@ -1,12 +1,13 @@
 
-:root{ --main-color: hsl(345, 90%, 60%);
+:root{ --main-color: #f6ab06;
 
   /* text colors */
-  --text-dark-gray: hsl(0, 0%, 25%);
+  --text-dark-gray: hsl(0, 0%, 100%);
   --text-x-dark-gray: hsl(0, 0%, 10%);
   --text-black: hsl(0, 0%, 0%);
 
   /* bg colors */
+  --bg-white : #FFFFFF;
   --bg-light-yellow: hsl(42, 26%, 77%);
   --bg-x-light-yellow: hsl(42, 40%, 87%);
   --bg-green: hsl(167, 57%, 52%);
@@ -31,7 +32,7 @@ html{
 
 body{
     font-family: 'Montserrat', sans-serif;
-    background-color: var(--bg-light-yellow);
+    background-color: var(--bg-white);
     color: var(--text-black);
 }
 
@@ -76,7 +77,7 @@ div h1, div h2{
     box-sizing: border-box;
     width: 190px;
     height: 254px;
-    background: var(--bg-x-light-yellow);
+    background: var(--bg-white);
     border: 1px solid var(--text-black);
     box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
     backdrop-filter: blur(6px);
@@ -162,7 +163,7 @@ div h1, div h2{
     border-width: 2px;
     box-sizing: border-box;
     color: var(--text-black);
-    background-color: var(--bg-x-light-yellow);
+    background-color: var(--bg-white);
     border-color: var(--text-black);
     cursor: pointer;
     display: inline-flex;

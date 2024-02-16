@@ -100,7 +100,7 @@ img {
     font-family: fantasy;
     font-weight: 200;
     background-color: var(--bg-black);  
-    border: 2px solid hsl(41, 39%, 29%);
+    border: 2px solid hsl(0, 100%, 98%);
     cursor: pointer;
     border-radius: 10px;
     box-shadow: 4px 4px hsl(41, 39%, 29%);
