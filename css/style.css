@@ -374,6 +374,7 @@ button {
 .header-menu li {
   display: inline-block;
   margin-left: 20px;
+  position: relative;
 }
 
 .header-menu  a {
@@ -382,6 +383,21 @@ button {
   transition: color 0.3s ease;
   font-weight: 400;
   text-transform: uppercase;
+}
+.dash::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: var(--text-x-dark-gray);
+  border-radius: 5px;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transition: all .5s;
+}
+.dash:hover::before{
+  transform: scaleX(1);
 }
 
 .header-menu a:hover{
