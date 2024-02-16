@@ -641,6 +641,7 @@ button {
   }
   .about .section-header{
     grid-column: 1 / 2;
+    text-align: center;
   }
   .about-img-box{
     margin: 50px auto 70px;
