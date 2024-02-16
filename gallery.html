@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,13 +9,14 @@
   <link rel="stylesheet" href="css/gallery.css" />
 
   <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-   <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-   <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-   <link rel="manifest" href="/favicon/site.webmanifest">
-   <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
-   <meta name="msapplication-TileColor" content="#da532c">
-   <meta name="theme-color" content="#ffffff">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
 </head>
+
 <body>
   <section>
     <ul>
@@ -24,10 +26,10 @@
       <li class="list" data-filter="guest">Guest</li>
       <li class="list" data-filter="other">Other</li>
     </ul>
-</section>
+  </section>
   <div class="grid-gallery" id="gallery">
 
-  <!---------------------------------------------------------OFF STAGE START-------------------------------------------------------->  
+    <!---------------------------------------------------------OFF STAGE START-------------------------------------------------------->
     <div class="grid-item off" onclick="openLightbox('images/img-2.jpg')">
       <img src="images/img-2.jpg" />
     </div>
@@ -43,8 +45,8 @@
     <div class="grid-item off" onclick="openLightbox('images/img-9.jpg')">
       <img src="images/img-9.jpg" />
     </div>
-  <!---------------------------------------------------------OFF STAGE END-------------------------------------------------------->
-  <!---------------------------------------------------------ON STAGE START-------------------------------------------------------->
+    <!---------------------------------------------------------OFF STAGE END-------------------------------------------------------->
+    <!---------------------------------------------------------ON STAGE START-------------------------------------------------------->
 
     <div class="grid-item on" onclick="openLightbox('images/img-10.jpg')">
       <img src="images/img-10.jpg" />
@@ -58,8 +60,8 @@
     <div class="grid-item on" onclick="openLightbox('images/img-19.jpg')">
       <img src="images/img-19.jpg" />
     </div>
-  <!---------------------------------------------------------ON STAGE END--------------------------------------------------------> 
-  <!---------------------------------------------------------GUEST START--------------------------------------------------------> 
+    <!---------------------------------------------------------ON STAGE END-------------------------------------------------------->
+    <!---------------------------------------------------------GUEST START-------------------------------------------------------->
 
     <div class="grid-item guest" onclick="openLightbox('images/img-20.jpg')">
       <img src="images/img-20.jpg" />
@@ -73,8 +75,8 @@
     <div class="grid-item guest" onclick="openLightbox('images/img-23.jpg')">
       <img src="images/img-23.jpg" />
     </div>
-  <!---------------------------------------------------------GUEST END--------------------------------------------------------> 
-  <!---------------------------------------------------------OTHER START--------------------------------------------------------> 
+    <!---------------------------------------------------------GUEST END-------------------------------------------------------->
+    <!---------------------------------------------------------OTHER START-------------------------------------------------------->
 
     <div class="grid-item other" onclick="openLightbox('images/img-24.jpg')">
       <img src="images/img-24.jpg" />
@@ -85,28 +87,32 @@
     <div class="grid-item other" onclick="openLightbox('images/img-26.jpg')">
       <img src="images/img-26.jpg" />
     </div>
-  <!---------------------------------------------------------OTHER STAGE END-------------------------------------------------------->   
+    <!---------------------------------------------------------OTHER STAGE END-------------------------------------------------------->
   </div>
-  <!---------------------------------------------IMAGE ZOOMING,CLOSE & DOWNLOAD BTN START-------------------------------------------> 
+  <!---------------------------------------------IMAGE ZOOMING,CLOSE & DOWNLOAD BTN START------------------------------------------->
   <div class="lightbox" id="lightbox">
     <div class="lightbox-content">
-      <img id="lightbox-img"/>
-      <svg class="close-btn" onclick="closeLightbox()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <img id="lightbox-img" />
+      <svg class="close-btn" onclick="closeLightbox()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+        height="24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <line c x1="18" y1="6" x2="6" y2="18"></line>
         <line x1="6" y1="6" x2="18" y2="18"></line>
       </svg>
-            
+
       <a id="download-btn" class="download-btn" download>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
           <polyline points="7 10 12 15 17 10"></polyline>
           <line x1="12" y1="15" x2="12" y2="3"></line>
-        </svg>        
+        </svg>
       </a>
     </div>
   </div>
   <!---------------------------------------------IMAGE ZOOMING,CLOSE & DOWNLOAD BTN START------------------------------------------->
-  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
   <script src="js/gallery.js"></script>
 </body>
+
 </html>
