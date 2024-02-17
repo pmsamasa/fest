@@ -499,6 +499,11 @@ button {
   text-transform: uppercase;
 }
 
+.logo1{
+  width: 22vh;
+  margin-bottom: -4vh;
+}
+
 
 .home-box {
   height: 400px;
@@ -579,7 +584,11 @@ button {
 
 @media(min-width:1100px){
   .home-title{
-    font-size: 6vh;
+    font-size: 7vh;
+  }
+  .logo1{
+    width: 40vh;
+    margin-bottom: -7vh;
   }
 }
 /* # about */
