@@ -132,6 +132,7 @@ img {
 
 .image-container {
     text-align: center;
+    
 }
 
 .image {
@@ -171,14 +172,13 @@ img {
     position: relative;
     width: 80%;
     top: -4vh;
-    left: 3vh;
-    background: var(--border-color);
+    left: 4vh;
+    background: #393939;
     opacity: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #fff;
     text-align: center;
     transition: opacity 0.3s ease;
     max-width: 80%;
@@ -186,9 +186,43 @@ img {
     color: var(--text-color);
 }
 
+.performers-info {
+    padding: 5px 10px;
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: -5px;
+    z-index: 1;
+  }
+
+  .performers-backdrop {
+    background-color: #393939;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .performers-name {
+    color: hsl(0, 0%, 0%);
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .performers-job {
+    text-transform: capitalize;
+    font-size: 10px;
+    text-align: center;
+  }
+
 /* Optional: Add styles for the overlay text */
 .image-overlay p {
     font-size: 15px;
+    color: #FFFFFF;
     /* Adjust the font size as needed */
 }
 
