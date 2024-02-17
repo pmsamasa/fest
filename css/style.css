@@ -507,7 +507,7 @@ button {
 .logo1{
   width: 22vh;
   margin-bottom: -4vh;
-  margin-left: 45%;
+  margin-left: 31%;;
 }
 
 
@@ -593,8 +593,8 @@ button {
     font-size: 7vh;
   }
   .logo1{
-    width: 40vh;
-    margin-bottom: -7vh;
+    width: 70vh;
+    margin-bottom: -13vh;
   }
 }
 /* # about */
