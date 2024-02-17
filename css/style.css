@@ -551,11 +551,11 @@ button {
 
 @media(max-width: 767px){
   .home{
-    padding: 235px 0 100px;
+    padding: 235px 0 0px;
   }
   .home-container{
     grid-template-columns: repeat(1, 1fr);
-    gap: 80px;
+    gap: 100px;
   }
   .home-right{
     order: -1;
@@ -593,7 +593,7 @@ button {
 }
 /* # about */
 .about {
-  padding: var(--section-py);
+  padding: 0;
 }
 
 .about-content{
