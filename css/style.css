@@ -481,14 +481,19 @@ button {
 }
 /* # home */
 .home {
-  padding: 180px 0 120px;
+  padding: 180px 0 150px; /* 120px */
 }
 
 .home-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  /*grid-template-columns: repeat(2, 1fr);
+  align-items: center;*/
   gap: 30px;
-  align-items: center;
+}
+
+.home-left {
+  display: grid;
+  text-align: center;
 }
 
 .home-title {
@@ -496,12 +501,13 @@ button {
   margin: 0 0 50px;
   color: var(--bg-grey);
   font-family: var(--ff-carter-one);
-  text-transform: uppercase;
+  text-transform: uppercase;;
 }
 
 .logo1{
   width: 22vh;
   margin-bottom: -4vh;
+  margin-left: 45%;
 }
 
 
