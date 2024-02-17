@@ -555,7 +555,7 @@ button {
   }
   .home-container{
     grid-template-columns: repeat(1, 1fr);
-    gap: 100px;
+    gap: 150px;
   }
   .home-right{
     order: -1;
