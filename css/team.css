@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @font-face {
     font-family: Anek-Malayalam;
     src: url(../webfonts/AnekMalayalam-VariableFont_wdth\,wght.ttf);
@@ -23,8 +24,8 @@
     --font-size-head: clamp(27px, 4vw, 50px);
     --font-size-image: ;
     --font-size-mem: 15px;
-    --font-size-btn: 4vw;
-    --font-famil: 'Black Ops One', system-ui;
+    --font-size-btn: 2vw;
+    --font-famil: 'Poppins', sans-serif;
     --font-famil-btn: 'Montserrat', sans-serif;
 
 }
@@ -97,8 +98,7 @@ img {
     margin: 5px;
     text-transform: uppercase;
     font-size: var(--font-size-btn);
-    font-family: fantasy;
-    font-weight: 200;
+    font-family: 'Poppins', sans-serif;
     background-color: var(--bg-black);  
     border: 2px solid hsl(0, 100%, 98%);
     cursor: pointer;
@@ -141,10 +141,6 @@ img {
     width: 20vw;
 }
 
-.image.middle {
-    margin-top: -5vw;
-    /* Adjust the value to control the vertical position */
-}
 
 .aju {
     width: 90%;
@@ -152,7 +148,7 @@ img {
 
 @media (max-width: 900px) {
     .image {
-        width: 25vw;
+        width: 40vw;
     }
 
 }
@@ -173,10 +169,9 @@ img {
 
 .image-overlay {
     position: relative;
-    top: -7vw;
-    left: 1vw;
-    width: 90%;
-    min-height: 0vw;
+    width: 80%;
+    top: -4vh;
+    left: 3vh;
     background: var(--border-color);
     opacity: 0;
     display: flex;
@@ -186,20 +181,15 @@ img {
     color: #fff;
     text-align: center;
     transition: opacity 0.3s ease;
-    max-width: 100%;
+    max-width: 80%;
     vertical-align: middle;
     color: var(--text-color);
 }
 
 /* Optional: Add styles for the overlay text */
 .image-overlay p {
-    font-size: 18px;
+    font-size: 15px;
     /* Adjust the font size as needed */
-}
-
-/* Optional: Adjust the overlay positioning */
-.image-overlay.middle {
-    margin-top: -20px;
 }
 
 /* member div*/
