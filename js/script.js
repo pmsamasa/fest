@@ -326,6 +326,62 @@ fetch(FULL_URL)
         table.deleteRow(1)
 
     });
+SHEET_RANGE = 'F16:I16';
+FULL_URL = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + SHEET_TITLE + '&range=' + SHEET_RANGE);
+
+fetch(FULL_URL)
+    .then(res => res.text())
+    .then(rep => {
+        let data = JSON.parse(rep.substr(47).slice(0, -2));
+        let length = data.table.rows.length;//total number of values
+
+        var table = document.getElementById('day-8');// table selector
+
+        for (let i = 0; i < length; i++) {
+
+            var newRow = table.insertRow();// insert rows
+
+            var cell1 = newRow.insertCell(0);//inserting colums/cells to above row
+            var cell2 = newRow.insertCell(1);
+            var cell3 = newRow.insertCell(2);
+            var cell4 = newRow.insertCell(3);
+
+            cell1.innerHTML = data.table.rows[i].c[0].v;// setting value to the above cells
+            cell2.innerHTML = data.table.rows[i].c[1].v;
+            cell3.innerHTML = data.table.rows[i].c[2].v;
+            cell4.innerHTML = data.table.rows[i].c[3].v;
+        }
+        table.deleteRow(1)
+
+    });
+SHEET_RANGE = 'K16:N16';
+FULL_URL = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + SHEET_TITLE + '&range=' + SHEET_RANGE);
+
+fetch(FULL_URL)
+    .then(res => res.text())
+    .then(rep => {
+        let data = JSON.parse(rep.substr(47).slice(0, -2));
+        let length = data.table.rows.length;//total number of values
+
+        var table = document.getElementById('day-9');// table selector
+
+        for (let i = 0; i < length; i++) {
+
+            var newRow = table.insertRow();// insert rows
+
+            var cell1 = newRow.insertCell(0);//inserting colums/cells to above row
+            var cell2 = newRow.insertCell(1);
+            var cell3 = newRow.insertCell(2);
+            var cell4 = newRow.insertCell(3);
+
+            cell1.innerHTML = data.table.rows[i].c[0].v;// setting value to the above cells
+            cell2.innerHTML = data.table.rows[i].c[1].v;
+            cell3.innerHTML = data.table.rows[i].c[2].v;
+            cell4.innerHTML = data.table.rows[i].c[3].v;
+        }
+        table.deleteRow(1)
+
+    });
 //////////////////////////////////////////////ON STAGE DATA///////////////////////////////////////////////////////////
 // JavaScript to handle arrow button clicks
 document.addEventListener("DOMContentLoaded", function() {
