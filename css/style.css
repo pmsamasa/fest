@@ -558,7 +558,7 @@ button {
 
 @media(max-width: 767px){
   .home{
-    padding: 235px 0 0px;
+    padding: 350px 0 0px;
   }
   .home-container{
     grid-template-columns: repeat(1, 1fr);
@@ -664,6 +664,7 @@ button {
   .about .section-header{
     grid-column: 1 / 2;
     text-align: center;
+    margin-top: 30vh;
   }
   .about-img-box{
     margin: 50px auto 70px;
