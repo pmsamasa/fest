@@ -144,7 +144,7 @@ button {
 .section-header {
   margin-bottom: 30px;
   text-align: center;
-  margin-top: 200px; /* 70px*/
+  margin-top: 70px;
 }
 
 .section-header-title {
@@ -481,19 +481,14 @@ button {
 }
 /* # home */
 .home {
-  padding: 180px 0 150px; /* 120px */
+  padding: 180px 0 120px;
 }
 
 .home-container {
   display: grid;
-  /*grid-template-columns: repeat(2, 1fr);
-  align-items: center;*/
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
   gap: 30px;
-}
-
-.home-left {
-  display: grid;
-  text-align: center;
 }
 
 .home-title {
@@ -505,9 +500,8 @@ button {
 }
 
 .logo1{
-  width: 22vh;
-  margin-bottom: -4vh;
-  margin-left: 31%;;
+  width: 27vh;
+  margin-bottom: -6vh;
 }
 
 
@@ -593,8 +587,8 @@ button {
     font-size: 7vh;
   }
   .logo1{
-    width: 70vh;
-    margin-bottom: -13vh;
+    width: 47vh;
+    margin-bottom: -10vh;
   }
 }
 /* # about */
