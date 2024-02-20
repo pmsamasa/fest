@@ -425,7 +425,7 @@ button {
   .header-toggler span{
     height: 2px;
     width: 80%;
-    background-color: var(--bg-light-yellow);
+    background-color: var(--bg-grey);
     position: relative;
     transition: background-color 0.3s ease;
   }
@@ -453,7 +453,8 @@ button {
     transform: rotate(45deg);
   }
   .header-toggler.active span::after{
-    transform: rotate(-45deg);  
+    transform: rotate(-45deg);
+    background-color: var(--bg-grey);  
   }
   .header-menu{
     position: fixed;
