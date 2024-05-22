@@ -557,9 +557,9 @@ button {
     grid-template-columns: repeat(1, 1fr);
     gap: 150px;
   }
-  .home-right{
+  /* .home-right{
     order: -1;
-  }
+  } */
   .home-box{
     height: 320px;
   }
