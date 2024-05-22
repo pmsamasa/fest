@@ -519,11 +519,17 @@ button {
   top: 0;
   height: 100%;
   width: 100%;
+  border-radius: 5px;
 }
 
 .home-img-box1,
 .home-img-box2 {
   position: absolute;
+}
+
+.home-img-box1 img,
+.home-img-box2 img {
+  border-radius: 5px;
 }
 
 .home-img-box1 {
