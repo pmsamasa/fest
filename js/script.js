@@ -448,7 +448,7 @@ fetch(FULL_URL)
         table.deleteRow(1)
 
     })
-SHEET_RANGE = 'U2:X6';
+SHEET_RANGE = 'U2:X10';
 FULL_URL = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + SHEET_TITLE + '&range=' + SHEET_RANGE);
 
 fetch(FULL_URL)
