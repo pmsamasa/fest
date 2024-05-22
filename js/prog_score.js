@@ -27,7 +27,8 @@ fetch(FULL_URL)
 .then(res => res.text())
 .then(rep => {
     let data = JSON.parse(rep.substr(47).slice(0, -2));
-    let length = data.table.rows.length;//total number of values
+    let length = 9;//total number of values
+    // let length = data.table.rows.length;//total number of values
 
     var table = document.getElementById('th-onstage');// table selector
 
@@ -92,12 +93,12 @@ fetch(FULL_URL)
 .then(res => res.text())
 .then(rep => {
     let data = JSON.parse(rep.substr(47).slice(0, -2));
-    let length = data.table.rows.length;
+    let length = 12;
+    // let length = data.table.rows.length;
 
     var table = document.getElementById('al-onstage');
 
     for (let i = 0; i < length; i++ ) {
-         
         var newRow = table.insertRow();
 
         var cell1 = newRow.insertCell(0);
@@ -113,7 +114,7 @@ fetch(FULL_URL)
         cell5.innerHTML = data.table.rows[i].c[4].v; 
         
     }
-    table.deleteRow(1)
+    table.deleteRow(1);
 
 })
 SHEET_TITLE = 'al_off';
