@@ -22,87 +22,78 @@
       <li class="list" data-filter="other">Other</li>
     </ul>
   </section>
-  <div class="grid-gallery" id="gallery">
+  <div class="grid-gallery">
 
     <!---------------------------------------------------------OFF STAGE START-------------------------------------------------------->
-    <div class="grid-item off" onclick="openLightbox('images/img-2.jpg')">
-      <img src="images/img-2.jpg" />
+    <div class="grid-item off">
+      <img src="images/img-2.jpg">
     </div>
-    <div class="grid-item off" onclick="openLightbox('images/img-4.jpg')">
-      <img src="images/img-4.jpg" />
+    <div class="grid-item off">
+      <img src="images/img-4.jpg">
     </div>
-    <div class="grid-item off" onclick="openLightbox('images/img-7.jpg')">
-      <img src="images/img-7.jpg" />
+    <div class="grid-item off">
+      <img src="images/img-7.jpg">
     </div>
-    <div class="grid-item off" onclick="openLightbox('images/img-8.jpg')">
-      <img src="images/img-8.jpg" />
+    <div class="grid-item off">
+      <img src="images/img-8.jpg">
     </div>
-    <div class="grid-item off" onclick="openLightbox('images/img-9.jpg')">
-      <img src="images/img-9.jpg" />
+    <div class="grid-item off">
+      <img src="images/img-9.jpg">
     </div>
     <!---------------------------------------------------------OFF STAGE END-------------------------------------------------------->
     <!---------------------------------------------------------ON STAGE START-------------------------------------------------------->
 
-    <div class="grid-item on" onclick="openLightbox('images/img-10.jpg')">
-      <img src="images/img-10.jpg" />
+    <div class="grid-item on">
+      <img src="images/img-10.jpg">
     </div>
-    <div class="grid-item on" onclick="openLightbox('images/img-14.jpg')">
-      <img src="images/img-14.jpg" />
+    <div class="grid-item on">
+      <img src="images/img-14.jpg">
     </div>
-    <div class="grid-item on" onclick="openLightbox('images/img-16.jpg')">
-      <img src="images/img-16.jpg" />
+    <div class="grid-item on">
+      <img src="images/img-16.jpg">
     </div>
-    <div class="grid-item on" onclick="openLightbox('images/img-19.jpg')">
-      <img src="images/img-19.jpg" />
+    <div class="grid-item on">
+      <img src="images/img-19.jpg">
     </div>
     <!---------------------------------------------------------ON STAGE END-------------------------------------------------------->
     <!---------------------------------------------------------GUEST START-------------------------------------------------------->
 
-    <div class="grid-item guest" onclick="openLightbox('images/img-20.jpg')">
-      <img src="images/img-20.jpg" />
+    <div class="grid-item guest">
+      <img src="images/img-20.jpg">
     </div>
-    <div class="grid-item guest" onclick="openLightbox('images/img-21.jpg')">
-      <img src="images/img-21.jpg" />
+    <div class="grid-item guest">
+      <img src="images/img-21.jpg">
     </div>
-    <div class="grid-item guest" onclick="openLightbox('images/img-22.jpg')">
-      <img src="images/img-22.jpg" />
+    <div class="grid-item guest">
+      <img src="images/img-22.jpg">
     </div>
-    <div class="grid-item guest" onclick="openLightbox('images/img-23.jpg')">
-      <img src="images/img-23.jpg" />
+    <div class="grid-item guest">
+      <img src="images/img-23.jpg">
     </div>
     <!---------------------------------------------------------GUEST END-------------------------------------------------------->
     <!---------------------------------------------------------OTHER START-------------------------------------------------------->
 
-    <div class="grid-item other" onclick="openLightbox('https://ucarecdn.com/bb3847d2-8e42-448c-86af-08caf45fec00/fs1.jpg')">
-      <img src="https://ucarecdn.com/bb3847d2-8e42-448c-86af-08caf45fec00/fs1.jpg" />
+    <div class="grid-item other">
+      <img src="https://ucarecdn.com/bb3847d2-8e42-448c-86af-08caf45fec00/fs1.jpg">
     </div>
-    <div class="grid-item other" onclick="openLightbox('images/img-25.jpg')">
-      <img src="images/img-25.jpg" />
+    <div class="grid-item other">
+      <img src="https://ucarecdn.com/cc9be296-13c6-4c48-b2e3-99eb4428582f/saleemust.png">
     </div>
-    <div class="grid-item other" onclick="openLightbox('images/img-26.jpg')">
-      <img src="images/img-26.jpg" />
+    <div class="grid-item other">
+      <img src="https://ucarecdn.com/cc9be296-13c6-4c48-b2e3-99eb4428582f/saleemust.png">
     </div>
     <!---------------------------------------------------------OTHER STAGE END-------------------------------------------------------->
   </div>
   <!---------------------------------------------IMAGE ZOOMING,CLOSE & DOWNLOAD BTN START------------------------------------------->
-  <div class="lightbox" id="lightbox">
-    <div class="lightbox-content">
-      <img id="lightbox-img" />
-      <svg class="close-btn" onclick="closeLightbox()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
-        height="24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <line c x1="18" y1="6" x2="6" y2="18"></line>
-        <line x1="6" y1="6" x2="18" y2="18"></line>
-      </svg>
-
-      <a id="download-btn" class="download-btn" download>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none"
-          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-          <polyline points="7 10 12 15 17 10"></polyline>
-          <line x1="12" y1="15" x2="12" y2="3"></line>
-        </svg>
-      </a>
-    </div>
+  <div class="lightbox">
+    <span class="close-btn">&times;</span>
+    <img class="lightbox-img" src="">
+    <a class="download-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+        <polyline points="7 10 12 15 17 10"></polyline>
+        <line x1="12" y1="15" x2="12" y2="3"></line>
+      </svg></a>
   </div>
   <!---------------------------------------------IMAGE ZOOMING,CLOSE & DOWNLOAD BTN START------------------------------------------->
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
