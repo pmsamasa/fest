@@ -968,6 +968,14 @@ button {
   }
 }
 
+@media(max-width: 395px){
+   .schedule-tab,
+   .schedule2-tab {
+           padding: 5px;
+
+   }
+}
+
 /* Add a new class for hiding/showing buttons */
 .hidden {
   display: none;
