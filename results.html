@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>result</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/splitting.css">
+    <link rel="stylesheet" type="text/css" href="css/aos.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/result.css">
+
+    <link rel="icon" href="favicon1.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon1.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header class="header">
+            <div class="header-container container">
+                <a href="#" class="header-logo">
+                    <span>MA</span>SA
+                </a>
+                <button type="button" class="header-toggler js-header-toggler">
+                    <span></span>
+                </button>
+                <nav class="header-menu js-header-menu">
+                    <ul>
+                        <!-- <li><a href="#home" class="dash">Home</a></li> -->
+                        <!-- <li><a href="#about" class="dash">About</a></li>
+                     <li><a href="#performers" class="dash">Fest Committee</a></li> -->
+                        <!-- <li><a href="#schedule" class="dash">Schedule</a></li> -->
+                        <li><a href="team.html" target="_blank" class="dash">Groups</a></li>
+                        <li><a href="program.html" target="_blank" class="dash">programmes</a></li>
+                        <li><a href="score.html" target="_blank" class="dash">score</a></li>
+                        <!-- <li><a href="gallery.html" target="_blank" class="dash">gallery</a></li> -->
+                        <!-- <li><a href="#contact" class="dash">Feedback</a></li> -->
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="home" id="home">
+            <div class="home-container container">
+                <div class="home-left">
+                    <img src="https://ucarecdn.com/d7a8c7eb-5efa-4463-8712-f0827ebc2724/logo1.png" alt="img2"
+                        class="logo1">
+                    <h1 class="home-title" data-splitting>
+                        masa creative <br> resistance 2024
+                    </h1>
+                </div>
+                <div class="home-right">
+                    <div class="prog-buttons">
+                        <button onclick="moveback()">prev</button>
+                        <button onclick="movenext()">next</button>
+                    </div>
+                    <!-- <div class="programs"> -->
+                        <table class="program-table">
+                            <thead>
+                                <tr class="table-item-name">
+                                    <th id="item-item" colspan="4">S</th>
+                                </tr>
+                                <tr>
+                                    <th>PLACE</th>
+                                    <th>NAME</th>
+                                    <th>GROUP</th>
+                                    <th>GRADE</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="11">First</td>
+                                    <td id="12">John Doe</td>
+                                    <td id="13">TEAM 1</td>
+                                    <td id="14">B</td>
+                                </tr>
+                                <tr>
+                                    <td id="21">Second</td>
+                                    <td id="22">John Doe</td>
+                                    <td id="23">TEAM 2</td>
+                                    <td id="24">B</td>
+                                </tr>
+                                <tr>
+                                    <td id="31">Third</td>
+                                    <td id="32">John Doe</td>
+                                    <td id="33">TEAM 3</td>
+                                    <td id="34">B</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    <!-- </div> -->
+                    <div class="blank"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="js/aos.js"></script>
+    <script src="js/splitting.min.js"></script>
+    <!-- <script src="js/script.js"></script> -->
+    <script src="js/result.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module">
+        import * as LR from 'https://cdn.jsdelivr.net/npm/@uploadcare/blocks@0.30.5/web/lr-file-uploader-regular.min.js';
+        LR.registerBlocks(LR);
+    </script>
+</body>
+
+</html>
