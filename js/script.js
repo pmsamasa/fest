@@ -18,16 +18,20 @@ window.addEventListener("load", () => {
 document.addEventListener("DOMContentLoaded", function() {
     // Array of image URLs
     const images1 = [
-        'https://ucarecdn.com/bb3847d2-8e42-448c-86af-08caf45fec00/fs1.jpg',
-        'https://ucarecdn.com/7d3b4f0e-deef-427a-a0b6-c23971ea8e6f/misbah.JPG',
-        'https://ucarecdn.com/f112cba7-5fec-46f5-bb52-23b03c82017c/anees_qir.JPG',
-        'https://ucarecdn.com/0dacd882-fb20-43eb-a6da-0f1b2c00bfbd/mus_jn.JPG'
+        'https://ucarecdn.com/247b22da-d8a8-4b7f-bada-4710c28aa212/updatesong5.jpg',
+        'https://ucarecdn.com/23b4c29b-4a59-4076-a8b6-e218d2078581/updatesong3.jpg',
+        'https://ucarecdn.com/fdbc6da8-d22b-4c1f-a66d-c3f5506a59c1/updatesong6.jpg',
+        'https://ucarecdn.com/d2e88ca9-acd9-4ebb-991d-3086a3e4f552/updatesong4.jpg',
+        'https://ucarecdn.com/e62bd567-c94a-44e7-8393-a0a29638618e/updatesong2.jpg',
+        
+
     ];
     const images2 = [
-        'https://ucarecdn.com/7d531316-63a5-4416-9232-e2872455d365/pothuway999.jpg',
-        'https://ucarecdn.com/ea341a8e-2e77-4cee-8703-8cef500a71f1/aj_usth.JPG',
-        'https://ucarecdn.com/295ad345-1685-4eb2-889d-0bbc2ead8c4c/rafi_song.JPG',
-        'https://ucarecdn.com/3f2cccf8-22b0-4fa4-9a7b-61fa478cc2b0/group_song_jou.JPG'
+        'https://ucarecdn.com/13531267-5b08-426b-b6cf-878b08b3863d/updatesong7.jpg',
+        'https://ucarecdn.com/3ea693c6-1b76-4bc8-88a6-3b9490461791/updatesong8.jpg',
+        'https://ucarecdn.com/8b1de71f-ca29-4db9-9dd5-4ad6b56b75af/updatemashup2.jpg',
+        'https://ucarecdn.com/fb0fc932-8672-4017-8710-4deeffb318a3/updatemashup3.jpg',
+        'https://ucarecdn.com/99f2a2fc-40ca-49e7-adc8-f26211047f85/updatemashup4.jpg'
     ];
 
     let currentIndex1 = 0;
