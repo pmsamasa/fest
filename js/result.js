@@ -13,7 +13,7 @@ let item_result = [
         ["THIRD", "MURSHID", "BOSPHOROS", ""]],
     ["CALLIGRAPHY TH",
         ["FIRST", "SADIQ", "DELOS", "B"],
-        ["SECOND", "ROSHID", "BOSPHOROS", "B"],
+        ["SECOND", "RASHID", "BOSPHOROS", "B"],
         ["THIRD", "SHANIL PM", "DELOS", "C"]],
     ["SHORT STORY TH",
         ["FIRST", "AL AMEEN", "CARTHEGE", "A"],
