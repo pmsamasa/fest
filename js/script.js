@@ -45,22 +45,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Set interval to change image every 5 seconds (5000 milliseconds)
     setInterval(changeImage, 5000);
-    let currentIndex = 0;
-    const imageElement = document.getElementById('slideshowImage');
-
-    function changeImage() {
-        imageElement.classList.remove('fade-in');
-        imageElement.classList.add('fade-out');
-
-        setTimeout(() => {
-            currentIndex = (currentIndex + 1) % images.length;
-            imageElement.src = images[currentIndex];
-            imageElement.classList.remove('fade-out');
-            imageElement.classList.add('fade-in');
-        }, 1000); // Duration should match the CSS transition duration (1s)
-    }
-
-    setInterval(changeImage, 5000);
 });
 
 
