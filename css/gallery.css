@@ -101,6 +101,34 @@ section ul li.active {
   grid-row: span 2;
 }
 
+.float-arrow {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10000;
+  display: none;
+}
+
+.float-arrow.arrow-show {
+  display: inline-flex;
+}
+
+.float-arrow a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: goldenrod;
+  padding: .8rem;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.float-arrow i {
+  font-size: 1.2rem;
+  color: #000;
+  text-align: center;
+}
+
 
 /* Write the media query */
 @media (max-width: 996px) {

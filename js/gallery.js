@@ -52,3 +52,13 @@ document.addEventListener("DOMContentLoaded", function() {
     $(this).addClass('active').siblings().removeClass('active');
    })
   })
+
+  // <!-- =============================CREATE FOOTER UP BUTTON WHEN SCROLL LITTLE DOWN======================================== -->
+window.addEventListener('scroll', () => {
+  let footerupButton = document.querySelector('.float-arrow');
+  if  (window.scrollY > 300) {
+    footerupButton.classList.add('arrow-show');
+  }else {
+    footerupButton.classList.remove('arrow-show');
+  }
+});
