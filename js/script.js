@@ -14,6 +14,40 @@ window.addEventListener("load", () => {
     });
 });
 
+// image change ::: slideshow
+document.addEventListener("DOMContentLoaded", function() {
+    // Array of image URLs
+    const images1 = [
+        'https://ucarecdn.com/bb3847d2-8e42-448c-86af-08caf45fec00/fs1.jpg',
+        'https://ucarecdn.com/7d3b4f0e-deef-427a-a0b6-c23971ea8e6f/misbah.JPG',
+        'https://ucarecdn.com/f112cba7-5fec-46f5-bb52-23b03c82017c/anees_qir.JPG',
+        'https://ucarecdn.com/0dacd882-fb20-43eb-a6da-0f1b2c00bfbd/mus_jn.JPG'
+    ];
+    const images2 = [
+        'https://ucarecdn.com/7d531316-63a5-4416-9232-e2872455d365/pothuway999.jpg',
+        'https://ucarecdn.com/ea341a8e-2e77-4cee-8703-8cef500a71f1/aj_usth.JPG',
+        'https://ucarecdn.com/295ad345-1685-4eb2-889d-0bbc2ead8c4c/rafi_song.JPG',
+        'https://ucarecdn.com/3f2cccf8-22b0-4fa4-9a7b-61fa478cc2b0/group_song_jou.JPG'
+    ];
+
+    let currentIndex1 = 0;
+    const imageElement1 = document.getElementById('slideshow1');
+    let currentIndex2 = 0;
+    const imageElement2 = document.getElementById('slideshow2');
+
+    // Function to change the image
+    function changeImage() {
+        currentIndex1 = (currentIndex1 + 1) % images1.length;
+        imageElement1.src = images1[currentIndex1];
+        currentIndex2 = (currentIndex2 + 1) % images2.length;
+        imageElement2.src = images2[currentIndex2];
+    }
+
+    // Set interval to change image every 5 seconds (5000 milliseconds)
+    setInterval(changeImage, 5000);
+});
+
+
 // JavaScript to handle arrow button clicks
 document.addEventListener("DOMContentLoaded", function() {
     const tabsContainer = document.querySelector('.schedule-tabs');
