@@ -1,3 +1,27 @@
+/* header menu */
+
+function headerMenu() {
+    const toggler = document.querySelector(".js-header-toggler");
+    const menu = document.querySelector(".js-header-menu");
+    const items = menu.querySelectorAll("li");
+
+    const menuToggle = () => {
+        menu.classList.toggle("open");
+        toggler.classList.toggle("active");
+    }
+    toggler.addEventListener("click", menuToggle);
+
+    items.forEach((item) => {
+        item.querySelector("a").addEventListener("click", () => {
+            if (window.innerWidth <= 991) {
+                menuToggle();
+            }
+        });
+    });
+}
+headerMenu();
+
+
 let item_result = [
     ["SHORT STORY MAL AL",
         ["FIRST", "DAVOOD", "CARTHEGE", "A"],
